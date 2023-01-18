@@ -1,3 +1,17 @@
+'''
+2023 - Mike Keohane
+
+This is simple Stock Ticker and New Summary Program
+
+The program uses a list of Stock Symbols that will be queried from Yahoo Finance API
+The stock results are stored.
+
+Subsequently news headlines are collected for each symbol along with the link to the relevant article source.
+
+SMTP is used to mail the results to the user. In this code, gmail is used to send the results but can be easily
+edited to any SMTP email server.
+
+'''
 import yfinance as yf
 import smtplib
 from email.message import EmailMessage
